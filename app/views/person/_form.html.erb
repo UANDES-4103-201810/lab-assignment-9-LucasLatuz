@@ -1,0 +1,14 @@
+<%= form_tag("/person/create", method: "post") do %>
+  <%= label_tag(:first_name, "First name:") %>
+  <%= text_field_tag(:first_name) %>
+  <%= label_tag(:last_name, "Last name:") %>
+  <%= text_field_tag(:last_name) %>
+  <%= label_tag(:description, "Description:") %>
+  <%= text_area_tag(:description) %>
+  <%= label_tag(:birth_date, "Birthdate:") %>
+  <%= date_field_tag(:birth_date) %>
+  <%= label_tag(:u, "Director or Actor:") %>
+  <%= radio_button_tag(:u,'Director') %>
+  <%= radio_button_tag(:u,'Actor') %>
+  <%= submit_tag ("Submit") %>
+<% end %>
